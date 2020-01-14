@@ -1,0 +1,4 @@
+    3  apt-get update ; apt-get install openjdk-8-jdk -y 
+    4  java -version
+    5  wget http://mirrors.jenkins.io/war-stable/latest/jenkins.war 
+    6  java -jar jenkins.war --httpPort=9090 & 
