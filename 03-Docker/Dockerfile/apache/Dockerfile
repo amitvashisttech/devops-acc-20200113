@@ -13,6 +13,9 @@ RUN apt-get install apache2 -y
 EXPOSE 80
 EXPOSE 9091
 
+# New Web Page
+COPY amit.html /var/www/html/myapp.html
+
 
 # Excute the Service
 CMD ["/usr/sbin/apache2ctl", "-D", "FOREGROUND"]
