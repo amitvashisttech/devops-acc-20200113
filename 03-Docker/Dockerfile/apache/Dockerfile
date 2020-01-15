@@ -10,5 +10,9 @@ RUN apt-get update
 # Install Apache Packages
 RUN apt-get install apache2 -y 
 
+EXPOSE 80
+EXPOSE 9091
+
+
 # Excute the Service
 CMD ["/usr/sbin/apache2ctl", "-D", "FOREGROUND"]
