@@ -1,6 +1,6 @@
 ---
 
-- hosts: web:db
+- hosts: dc
   become: yes 
 
 
@@ -19,3 +19,6 @@
 
   - name: Deploy Info Template.
     template: src=templates/info.j2 dest=/var/www/html/info.html
+
+  - name: Install Java Packages
+    apt: name=openjdk-8-jdk state=present

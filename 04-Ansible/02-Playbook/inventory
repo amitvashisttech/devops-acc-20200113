@@ -17,3 +17,14 @@
 10.128.0.29
 10.128.0.31
 10.128.0.30
+
+[dc:children]
+web
+db
+
+
+
+
+[dc:vars]
+ansible_ssh_user=root
+ansible_ssh_pass=redhat@123
