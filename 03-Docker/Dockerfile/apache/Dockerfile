@@ -1,5 +1,5 @@
 # Base Image
-FROM ubuntu:16.04
+FROM ubuntu:xenial-20210416
 
 # Maintiner
 MAINTAINER Amit Vashist <amitvashist7@gmail.com>
